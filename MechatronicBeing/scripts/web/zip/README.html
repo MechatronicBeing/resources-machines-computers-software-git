@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="zip">Zip</h1>
+<p>Create pkZip files with javaScript</p>
+<p>Files can be inserted into your zip file by reading a directory, entering a string or uploading files.</p>
+<p>First, download and include the zip.js class in your html and create a new class Zip</p>
+<pre><code>  &lt;script src=&#39;zip.js&#39;&gt;&lt;/script&gt;
+</code></pre>
+<div class="sourceCode" id="cb2"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1"></a>  z<span class="op">=</span><span class="kw">new</span> <span class="bu">Zip</span>(<span class="st">&#39;myZipFileName&#39;</span>)<span class="op">;</span></span></code></pre></div>
+<p>Then you can:</p>
+<ul>
+<li>Load files of your directory to zip object with fecth2zip(filesArray,folder).</li>
+</ul>
+<div class="sourceCode" id="cb3"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1"></a>  filesArray<span class="op">=</span>[</span>
+<span id="cb3-2"><a href="#cb3-2"></a>    <span class="st">&#39;file01.ext&#39;</span><span class="op">,</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a>    <span class="st">&#39;file02.ext&#39;</span><span class="op">,</span></span>
+<span id="cb3-4"><a href="#cb3-4"></a>    <span class="st">&#39;file...&#39;</span></span>
+<span id="cb3-5"><a href="#cb3-5"></a>  ]<span class="op">;</span></span>
+<span id="cb3-6"><a href="#cb3-6"></a>  z<span class="op">.</span><span class="fu">fecth2zip</span>(filesArray<span class="op">,</span><span class="st">&#39;public/&#39;</span>)<span class="op">;</span></span></code></pre></div>
+<ul>
+<li>Create a new file from a string with str2zip(nameFile,content,directory).</li>
+</ul>
+<div class="sourceCode" id="cb4"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb4-1"><a href="#cb4-1"></a>  z<span class="op">.</span><span class="fu">str2zip</span>(<span class="st">&#39;test.txt&#39;</span><span class="op">,</span><span class="st">&#39;content&#39;</span><span class="op">,</span><span class="st">&#39;public/teste/&#39;</span>)<span class="op">;</span></span></code></pre></div>
+<ul>
+<li><p>Or upload to zip.</p>
+<p>Put onchange event into the input file and send the files to function files2zip(this.files).</p></li>
+</ul>
+<pre><code>  &lt;input type=&quot;file&quot; onchange=&quot;z.files2zip(this.files)&quot; value=&#39;files&#39; multiple&gt;
+</code></pre>
+<p>After placing all the objects inside your Zip object file, just download it.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb6-1"><a href="#cb6-1"></a>  <span class="op">&lt;</span>input type<span class="op">=</span><span class="st">&quot;button&quot;</span> onclick<span class="op">=</span><span class="st">&quot;z.makeZip()&quot;</span> value<span class="op">=</span><span class="st">&#39;Zip&#39;</span><span class="op">&gt;</span></span></code></pre></div>
+</body>
+</html>

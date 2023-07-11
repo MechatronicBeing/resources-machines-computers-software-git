@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="media-player-">Media Player <a href="https://github.com/jonathantneal/media-player"><img src="https://jonathantneal.github.io/media-player/logo.svg" alt="" width="90" height="90" align="right"></a></h1>
+<p><a href="https://www.npmjs.com/package/mediaplayer"><img src="https://img.shields.io/npm/v/mediaplayer.svg" alt="NPM Version" /></a> <a href="https://www.npmjs.com/package/mediaplayer"><img src="https://img.shields.io/bundlephobia/minzip/mediaplayer.svg" alt="NPM Filesize" /></a> <a href="https://travis-ci.org/jonathantneal/media-player"><img src="https://img.shields.io/travis/jonathantneal/media-player/master.svg" alt="Build Status" /></a></p>
+<p><a href="https://github.com/jonathantneal/media-player">Media Player</a> is a tiny, responsive, international, accessible, cross browser, easily customizable media player written in plain vanilla JavaScript.</p>
+<p align="center">
+  <img src="https://jonathantneal.github.io/media-player/screenshot.png" alt="Media Player Screenshot" width="400">
+</p>
+
+<p><a href="https://github.com/jonathantneal/media-player">Media Player</a> can be controlled with any pointer or keyboard, whether it’s to play, pause, move across the timeline, mute, unmute, adjust the volume, enter or leave fullscreen, or download the source.</p>
+<p align="center">
+  <img src="https://jonathantneal.github.io/media-player/toolbar-classes.png" alt="Diagram of Media Player" width="665" height="116">
+</p>
+
+<p><a href="https://github.com/jonathantneal/media-player">Media Player</a> is designed for developers who want complete visual control over the component. It’s also for developers who want to hack at or extend the player without any fuss. The player itself does all the heavy lifting; semantic markup, accessibility management, language, fullscreen, text direction, providing pointer-agnostic scrubbable timelines, and lots of other cool sounding stuff.</p>
+<p align="center">
+  <img src="https://jonathantneal.github.io/media-player/time-classes.png" alt="Diagram of Time Slider" width="598" height="82">
+</p>
+
+<h2 id="usage">Usage</h2>
+<p>Add the required JavaScript and default CSS to your page.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;https://unpkg.com/mediaplayer/browser.js&quot;</span><span class="kw">&gt;&lt;/script&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="kw">&lt;link</span><span class="ot"> rel=</span><span class="st">&quot;stylesheet&quot;</span><span class="ot"> src=</span><span class="st">&quot;https://unpkg.com/mediaplayer/browser.css&quot;</span><span class="kw">&gt;&lt;/script&gt;</span></span></code></pre></div>
+<h3 id="node-usage">Node Usage</h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1"></a><span class="ex">npm</span> install --save mediaplayer</span></code></pre></div>
+<p>Import the library and create a new <a href="https://github.com/jonathantneal/media-player">Media Player</a> using any media element:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1"></a><span class="im">import</span> MediaPlayer <span class="im">from</span> <span class="st">&#39;mediaplayer&#39;</span><span class="op">;</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a></span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="co">// get target from media with controls</span></span>
+<span id="cb3-4"><a href="#cb3-4"></a><span class="kw">const</span> $target <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="fu">querySelector</span>(<span class="st">&#39;audio[controls], video[controls]&#39;</span>)<span class="op">;</span></span>
+<span id="cb3-5"><a href="#cb3-5"></a></span>
+<span id="cb3-6"><a href="#cb3-6"></a><span class="co">// assign media player from target (all these options represent the defaults)</span></span>
+<span id="cb3-7"><a href="#cb3-7"></a><span class="kw">const</span> player <span class="op">=</span> <span class="kw">new</span> MediaPlayer(</span>
+<span id="cb3-8"><a href="#cb3-8"></a>  $target<span class="op">,</span></span>
+<span id="cb3-9"><a href="#cb3-9"></a>  {</span>
+<span id="cb3-10"><a href="#cb3-10"></a>    <span class="dt">prefix</span><span class="op">:</span> <span class="st">&#39;media&#39;</span><span class="op">,</span></span>
+<span id="cb3-11"><a href="#cb3-11"></a>    <span class="dt">lang</span><span class="op">:</span> {</span>
+<span id="cb3-12"><a href="#cb3-12"></a>      <span class="dt">play</span><span class="op">:</span> <span class="st">&#39;play&#39;</span><span class="op">,</span></span>
+<span id="cb3-13"><a href="#cb3-13"></a>      <span class="dt">pause</span><span class="op">:</span> <span class="st">&#39;pause&#39;</span><span class="op">,</span></span>
+<span id="cb3-14"><a href="#cb3-14"></a>      <span class="dt">mute</span><span class="op">:</span> <span class="st">&#39;mute&#39;</span><span class="op">,</span></span>
+<span id="cb3-15"><a href="#cb3-15"></a>      <span class="dt">unmute</span><span class="op">:</span> <span class="st">&#39;unmute&#39;</span><span class="op">,</span></span>
+<span id="cb3-16"><a href="#cb3-16"></a>      <span class="dt">volume</span><span class="op">:</span> <span class="st">&#39;volume&#39;</span><span class="op">,</span></span>
+<span id="cb3-17"><a href="#cb3-17"></a>      <span class="dt">currentTime</span><span class="op">:</span> <span class="st">&#39;current time&#39;</span><span class="op">,</span></span>
+<span id="cb3-18"><a href="#cb3-18"></a>      <span class="dt">remainingTime</span><span class="op">:</span> <span class="st">&#39;remaining time&#39;</span><span class="op">,</span></span>
+<span id="cb3-19"><a href="#cb3-19"></a>      <span class="dt">enterFullscreen</span><span class="op">:</span> <span class="st">&#39;enter fullscreen&#39;</span><span class="op">,</span></span>
+<span id="cb3-20"><a href="#cb3-20"></a>      <span class="dt">leaveFullscreen</span><span class="op">:</span> <span class="st">&#39;leave fullscreen&#39;</span><span class="op">,</span></span>
+<span id="cb3-21"><a href="#cb3-21"></a>      <span class="dt">download</span><span class="op">:</span> <span class="st">&#39;download&#39;</span></span>
+<span id="cb3-22"><a href="#cb3-22"></a>    }<span class="op">,</span></span>
+<span id="cb3-23"><a href="#cb3-23"></a>    <span class="dt">svgs</span><span class="op">:</span> {</span>
+<span id="cb3-24"><a href="#cb3-24"></a>      <span class="dt">play</span><span class="op">:</span> <span class="st">&#39;#symbol-play&#39;</span><span class="op">,</span></span>
+<span id="cb3-25"><a href="#cb3-25"></a>      <span class="dt">pause</span><span class="op">:</span> <span class="st">&#39;#symbol-pause&#39;</span><span class="op">,</span></span>
+<span id="cb3-26"><a href="#cb3-26"></a>      <span class="dt">mute</span><span class="op">:</span> <span class="st">&#39;#symbol-mute&#39;</span><span class="op">,</span></span>
+<span id="cb3-27"><a href="#cb3-27"></a>      <span class="dt">unmute</span><span class="op">:</span> <span class="st">&#39;#symbol-unmute&#39;</span><span class="op">,</span></span>
+<span id="cb3-28"><a href="#cb3-28"></a>      <span class="dt">volume</span><span class="op">:</span> <span class="st">&#39;#symbol-volume&#39;</span><span class="op">,</span></span>
+<span id="cb3-29"><a href="#cb3-29"></a>      <span class="dt">currentTime</span><span class="op">:</span> <span class="st">&#39;#symbol-currentTime&#39;</span><span class="op">,</span></span>
+<span id="cb3-30"><a href="#cb3-30"></a>      <span class="dt">remainingTime</span><span class="op">:</span> <span class="st">&#39;#symbol-remainingTime&#39;</span><span class="op">,</span></span>
+<span id="cb3-31"><a href="#cb3-31"></a>      <span class="dt">enterFullscreen</span><span class="op">:</span> <span class="st">&#39;#symbol-enterFullscreen&#39;</span><span class="op">,</span></span>
+<span id="cb3-32"><a href="#cb3-32"></a>      <span class="dt">leaveFullscreen</span><span class="op">:</span> <span class="st">&#39;#symbol-leaveFullscreen&#39;</span><span class="op">,</span></span>
+<span id="cb3-33"><a href="#cb3-33"></a>      <span class="dt">download</span><span class="op">:</span> <span class="st">&#39;#symbol-download&#39;</span></span>
+<span id="cb3-34"><a href="#cb3-34"></a>    }<span class="op">,</span></span>
+<span id="cb3-35"><a href="#cb3-35"></a>    <span class="dt">timeDir</span><span class="op">:</span> <span class="st">&#39;ltr&#39;</span><span class="op">,</span></span>
+<span id="cb3-36"><a href="#cb3-36"></a>    <span class="dt">volumeDir</span><span class="op">:</span> <span class="st">&#39;ltr&#39;</span></span>
+<span id="cb3-37"><a href="#cb3-37"></a>  }</span>
+<span id="cb3-38"><a href="#cb3-38"></a>)<span class="op">;</span></span></code></pre></div>
+<p>The <code>prefix</code> option is used to prefix flat class names, which are otherwise:</p>
+<pre class="scss"><code>.media-player {}
+
+  .media-media { /* video or audio element */ }
+
+  .media-toolbar {}
+
+    .media-control.media-play {}
+      .media-symbol.media-play-symbol { /* play svg */ }
+      .media-symbol.media-pause-symbol { /* pause svg */ }
+
+    .media-control.media-mute {}
+      .media-symbol.media-mute-symbol { /* mute svg */ }
+      .media-symbol.media-unmute-symbol { /* unmute svg */ }
+
+    .media-text.media-current-time { /* plain text */ }
+    .media-text.media-remaining-time { /* plain text */ }
+
+    .media-slider.media-volume {}
+      .media-range.media-volume-range { /* full volume */ }
+      .media-range.media-volume-meter { /* current volume */ }
+
+    .media-slider.media-time {}
+      .media-range.media-time-range { /* full duration */ }
+      .media-range.media-time-meter { /* elapsed time */ }
+
+    .media-control.media-download {}
+      .media-symbol.media-download-symbol { /* download svg */ }
+
+    .media-control.media-fullscreen {}
+      .media-symbol.media-enterfullscreen-symbol { /* enter full screen svg */ }
+      .media-symbol.media-leavefullscreen-symbol { /* leave full screen svg */ }
+</code></pre>
+<p>Note the convenience classes like <code>media-control</code>, <code>media-symbol</code>, <code>media-slider</code>, <code>media-range</code> and <code>media-range-meter</code>. These make it easier to style a group of controls or to add new controls.</p>
+<p>Because flexbox is used to arrange the controls, the <code>order</code> property can be used to easily rearrange them.</p>
+<p>The <code>lang</code> object is used to provide accessible labels to each control in any language. Undefined labels will use English labels.</p>
+<p>The <code>svgs</code> object is used to assign SVG sprites to each control in each state. There may be IE limitations when using external sources with your SVGs, so read <a href="https://css-tricks.com/svg-use-external-source/">SVG <code>use</code> with External Source</a> for details and solutions.</p>
+<h2 id="media-player-instance">Media Player Instance</h2>
+<p>All DOM generated by <a href="https://github.com/jonathantneal/media-player">Media Player</a> is easily accessible from its instance.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb5-1"><a href="#cb5-1"></a><span class="kw">new</span> Media(mediaElement<span class="op">,</span> options)<span class="op">;</span></span></code></pre></div>
+<ul>
+<li><code>media</code>: the original media target</li>
+<li><code>toolbar</code>: the toolbar containing all the media controls</li>
+<li><code>play</code>: the play button</li>
+<li><code>playSymbol</code>: the play image</li>
+<li><code>pauseSymbol</code>: the pause image</li>
+<li><code>mute</code>: the mute button</li>
+<li><code>muteSymbol</code>: the image seen before clicking mute</li>
+<li><code>unmuteSymbol</code>: the image used after clicking mute</li>
+<li><code>currentTime</code>: the current time element</li>
+<li><code>currentTimeText</code>: the current time text node</li>
+<li><code>remainingTime</code>: the remaining time element</li>
+<li><code>remainingTimeText</code>: the remaining time text node</li>
+<li><code>time</code>: the time slider</li>
+<li><code>timeRange</code>: the time slider range</li>
+<li><code>timeMeter</code>: the time slider meter</li>
+<li><code>volume</code>: the volume slider</li>
+<li><code>volumeRange</code>: the volume slider range</li>
+<li><code>volumeMeter</code>: the volume slider meter</li>
+<li><code>download</code>: the download button</li>
+<li><code>downloadSymbol</code>: the download image</li>
+<li><code>enterFullscreenSymbol</code>: the full screen enter image</li>
+<li><code>leaveFullscreenSymbol</code>: the full screen leave image</li>
+</ul>
+<h2 id="sliders">Sliders</h2>
+<p>Volume and time controls sliders allow you to drag volume up or down and time backward or forward. By default, these sliders work left-to-right, meaning that dragging the slider to the right advances the control. This behavior is expected in a right-to-left environment as well.</p>
+<p>These control can be configured to work in any direction — right-to-left (<code>rtl</code>), top-to-bottom (<code>ttb</code>), bottom-to-top (<code>btt</code>) — with the following configuration:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb6-1"><a href="#cb6-1"></a><span class="kw">new</span> MediaPlayer(audioElement<span class="op">,</span> {</span>
+<span id="cb6-2"><a href="#cb6-2"></a>  <span class="dt">volumeDir</span><span class="op">:</span> <span class="st">&#39;btt&#39;</span><span class="op">,</span> <span class="co">// (volume will drag bottom to top)</span></span>
+<span id="cb6-3"><a href="#cb6-3"></a>  <span class="dt">timeDir</span><span class="op">:</span> <span class="st">&#39;ttb&#39;</span> <span class="co">// (time will drag top to bottom)</span></span>
+<span id="cb6-4"><a href="#cb6-4"></a>})<span class="op">;</span></span></code></pre></div>
+<h2 id="accessibility">Accessibility</h2>
+<p><a href="https://github.com/jonathantneal/media-player">Media Player</a> automatically assigns <strong>ARIA</strong> roles and labels to its controls, which always reflect the present state of the media player. Special slider roles are used for volume and time which are then given helpful keyboard controls.</p>
+<h2 id="events">Events</h2>
+<p>Three new events are dispatched by <a href="https://github.com/jonathantneal/media-player">Media Player</a>. <code>playchange</code> dispatches whenever play or pause toggles. <code>timechange</code> dispatches more rapidly than <code>timeupdate</code>. <code>canplaystart</code> dispatches the first time media can play through.</p>
+<h2 id="keyboard-controls">Keyboard Controls</h2>
+<h3 id="spacebar-enter--return">Spacebar, Enter / Return</h3>
+<p>When focused on the <strong>play button</strong> or the <strong>timeline slider</strong>, pressing the <strong>spacebar</strong> or <strong>enter / return</strong> toggles the playback of the media.</p>
+<p>When focused on the <strong>mute button</strong> or the <strong>volume slider</strong>, pressing the <strong>spacebar</strong> or <strong>enter / return</strong> toggles the muting of the media.</p>
+<h3 id="arrows">Arrows</h3>
+<p>When focused on the <strong>play button</strong> or the <strong>timeline slider</strong>, pressing <strong>right arrow</strong> or <strong>up arrow</strong> moves the time forward, while pressing <strong>left arrow</strong> or <strong>down arrow</strong> moves the time backward. Time is moved by 10 seconds, unless <strong>shift</strong> is also pressed, in which case it moves 30 seconds.</p>
+<p>When focused on the <strong>mute button</strong> or the <strong>volume slider</strong>, pressing <strong>right arrow</strong> or <strong>up arrow</strong> increases the volume, while pressing <strong>left arrow</strong> or <strong>down arrow</strong> decreases the volume. Volume is moved by 1%, unless <strong>shift</strong> is also pressed, in which case it moves 10%.</p>
+<h2 id="browser-compatibility">Browser compatibility</h2>
+<p><a href="https://github.com/jonathantneal/media-player">Media Player</a> works in all browsers supporting Audio, Video, and SVG elements. This includes Chrome, Edge, Firefox, Internet Explorer 9+, Opera, and Safari 6+. Older versions of Edge and Internet Explorer may need additional assistance loading SVGs from an external URL.</p>
+<p>Read <a href="https://css-tricks.com/svg-use-external-source/">SVG <code>use</code> with External Source</a> for details and solutions.</p>
+<h2 id="demos">Demos</h2>
+<ul>
+<li><a href="https://jonathantneal.github.io/media-player/">Standard Experience</a></li>
+<li><a href="https://jonathantneal.github.io/media-player/rtl.html">Right-To-Left Experience</a></li>
+<li><a href="https://jonathantneal.github.io/media-player/playlist.html">Playlist Experience</a></li>
+<li><a href="https://jonathantneal.github.io/media-player/subtitles.html">Subtitled Experience</a></li>
+</ul>
+<h2 id="licensing">Licensing</h2>
+<p><a href="https://github.com/jonathantneal/media-player">Media Player</a> and its icons use the CC0 “No Rights Reserved” license.</p>
+<hr />
+<p><a href="https://github.com/jonathantneal/media-player">Media Player</a> adds up to 2.47 kB of JS and 582 B of CSS to your project.</p>
+</body>
+</html>

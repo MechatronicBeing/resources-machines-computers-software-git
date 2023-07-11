@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>MechatronicBeing</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<ul>
+<li><strong>Title</strong> : zip</li>
+<li><strong>Author</strong> : pwasystem</li>
+<li><strong>Website</strong> : <a href="https://github.com/pwasystem/">https://github.com/pwasystem/</a></li>
+<li><strong>Description</strong> : Create pkZip files with javaScript</li>
+<li><strong>Source</strong> : <a href="https://github.com/pwasystem/zip/">https://github.com/pwasystem/zip/</a></li>
+<li><strong>Type</strong> : web-script</li>
+<li><strong>License</strong> : The Unlicense</li>
+<li><strong>WARNING</strong> : this library only merge the files, apply no compression on them !!!! The size will stay the same.</li>
+<li><strong>Modifications</strong> :
+<ul>
+<li>adding a html "test" page.</li>
+<li>in "zip.js"
+<ul>
+<li>adding a "file-counter"
+<ul>
+<li>line "this.filesCount = 0;" in constructor</li>
+<li>lines "this.filesCount++;" in fecth2zip, str2zip and files2zip methods</li>
+<li>added "filesCounted..." function (return this.filesCount)</li>
+<li>WHY ???
+<ul>
+<li>"fecth2zip" use asynchronous fetch to get the files !</li>
+<li>SO : need to wait for all files to be loaded, ELSE making the zip will create a fake zip.</li>
+<li>it's very important to control the "filesCount" to verify that all files are loaded, before making the zip</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</body>
+</html>

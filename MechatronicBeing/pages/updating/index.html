@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>readme</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h2 id="updating">Updating</h2>
+<h3 id="updating-files-from-remote-to-local">Updating files (from remote to local)</h3>
+<ul>
+<li>using git : <a href="git-fetch.sh">git-fetch.sh</a></li>
+</ul>
+<h3 id="update-the-mechatronicbeing-directory">Update the 'MechatronicBeing' directory</h3>
+<ul>
+<li><a href="full-update.sh">update.sh</a> will execute the scripts :
+<ul>
+<li><a href="update/update-MBdir.sh">update/update-MBdir.sh</a> : get the recent 'MechatronicBeing' directory</li>
+<li><a href="update/update-git-fetch.sh">update/update-git-fetch.sh</a> : create the file <a href="git-fetch.sh">"git-fetch.sh"</a></li>
+<li><a href="update/update-downloading.sh">update/update-downloading.sh</a> : create <a href="../downloading/download.sh">"downloading/update-downloading.sh"</a> and <a href="../downloading/git-clone.sh">"downloading/git-clone.sh"</a> files</li>
+<li><a href="update/update-list.sh">update/update-list.sh</a> : create a basic list <a href="../lists/">../lists/</a></li>
+<li><a href="update/update-list-full.sh">update/update-list-full.sh</a> : create a detailed list <a href="../lists/full/">"./lists/full/</a></li>
+<li><a href="update/update-list-files.sh">update/update-list-files.sh</a> : create a file list in <a href="../lists/files/">"./lists/files/</a></li>
+<li><a href="update/update-md2html.sh">update/update-md2html.sh</a> : generate all .html files from .md</li>
+<li>and upload the files (see "Uploading files (from local to remote)")</li>
+</ul></li>
+</ul>
+<h3 id="update-html-pages-from-markdown-files">Update HTML pages from Markdown files</h3>
+<p>The script <a href="update/update-md2html.sh">update/update-md2html.sh</a> is executed for generating all .html pages from .md files, in the root category.<br />
+The script use 2 conversion methods :</p>
+<ol>
+<li>IF the program "PANDOC" is installed in the system, the script execute it to convert the files. - Note1 : with this method, a "static" html page is created</li>
+<li>ELSE, the script will create a very simple html file, with javascript librairies, to read and convert the markdown file <strong>directly</strong> in the web-browser.<br />
+- Note2a : this method use <a href="https://marked.js.org/">MARKED.js</a> librairie, distributed under the <strong>MIT license</strong>. - Note2b : this method allows to read the markdown file <strong>on the fly</strong>, BUT requires a fileserver to be efficient.</li>
+</ol>
+<h3 id="uploading-files-from-local-to-remote">Uploading files (from local to remote)</h3>
+<ul>
+<li>using git :
+<ul>
+<li>'Light' upload (only the ./MechatronicBeing/ folder) : <a href="git/git-MBdir.sh">git/git-MBdir.sh</a></li>
+<li>Full upload (all the files) : <a href="git/git-Fulldir.sh">git/git-Fulldir.sh</a></li>
+</ul></li>
+</ul>
+</body>
+</html>

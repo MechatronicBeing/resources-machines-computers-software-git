@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <title>Files</title>
+    <link rel="stylesheet" href="../../styles/pages-files.css">
+    <link rel="stylesheet" href="../../styles/pages-files-checked.css">
+    <link rel="stylesheet" href="../../styles/pages-files-targeted.css">
+  
+<!--     <script>
+      if(! window.location.search.slice(1).split('#').includes('noscript')){
+        var newScript = document.createElement('script');
+        newScript.src = "$showedRelativeFinalTarget/$MBPagesWebScriptsTarget/$filesWebScriptFilename";
+        newScript.type = 'text/javascript';
+        newScript.async = true;
+        document.head.appendChild(newScript);
+        newScript.addEventListener('load', () => {console.log(newScript.src+' loaded.');});
+        newScript.addEventListener('load', () => { loadJsScript("$showedRelativeFinalTarget/$zipWebScriptTarget/$zipWebScriptFilename");});
+      }else {
+        console.log('Javascript disabled');
+      }
+    </script> -->
+
+  </head>
+  <body>
+  
+    <div id='div-body' class='div-body'>  
+      
+      <!-- MAIN options HTML -->
+      <input type='radio' name='showOption' id='ckb_options_None' style='display: none;' /><label for='ckb_options_None' id='lbl_options_Columns'>None</label>
+      <input type='radio' name='showOption' id='ckb_options_Columns' style='display: none;' /><label for='ckb_options_Columns' id='lbl_options_Columns'>Columns</label>
+      <input type='radio' name='showOption' id='ckb_options_ViewType' style='display: none;' /><label for='ckb_options_ViewType' id='lbl_options_ViewType'>ViewType</label>
+      <input type='radio' name='showOption' id='ckb_options_Rows' style='display: none;' /><label for='ckb_options_Rows' id='lbl_options_Rows'>Rows</label>
+      <input type='radio' name='showOption' id='ckb_options_FileViewer' style='display: none;' /><label for='ckb_options_FileViewer' id='lbl_options_FileViewer'>FileViewer</label>
+      <input type='radio' name='showOption' id='ckb_options_Scripts' style='display: none;' /><label for='ckb_options_Scripts' id='lbl_options_Scripts'>Scripts</label>
+      <br>
+
+      <!-- Columns Options HTML -->
+      <input type='checkbox' id='ckb_colOption_LastModified' class='show_colOption show_colOption_LastModified' /><label for='ckb_colOption_LastModified' class='show_colOption show_colOption_LastModified'>Last Modified</label>
+      <input type='checkbox' id='ckb_colOption_ItemType' class='show_colOption show_colOption_ItemType' /><label for='ckb_colOption_ItemType' class='show_colOption show_colOption_ItemType'>Type</label>
+      <input type='checkbox' id='ckb_colOption_ItemSize' class='show_colOption show_colOption_ItemSize' /><label for='ckb_colOption_ItemSize' class='show_colOption show_colOption_ItemSize'>Size</label>
+      <input type='checkbox' id='ckb_colOption_Properties' class='show_colOption show_colOption_Properties' /><label for='ckb_colOption_Properties' class='show_colOption show_colOption_Properties'>Properties</label>
+      <br class='show_colOption'>
+
+      <!-- ViewType option HTML -->
+      <input type='radio' id='rd_ViewType_Full' name='show_ViewTypeOption' class='show_ViewTypeOption show_ViewTypeOption_Full' /><label for='rd_ViewTypeOption_Full' class='show_ViewTypeOption show_ViewTypeOption_Full'>Full</label>
+      <input type='radio' id='rd_ViewType_Single' name='show_ViewTypeOption' class='show_ViewTypeOption show_ViewTypeOption_Single' checked /><label for='rd_ViewTypeOption_Single' class='show_ViewTypeOption show_ViewTypeOption_Single'>Single Folder</label>
+      <br class='show_ViewTypeOption'>
+      
+      <!-- Row Options HTML -->
+      <input type='checkbox' id='ckb_rowOption_Hover' class='show_rowOption show_rowOption_Hover' checked /><label for='ckb_rowOption_Hover' class='show_rowOption show_rowOption_Hover'>Hover Information</label>
+      <input type='checkbox' id='ckb_rowOption_ExpanderIcon' class='show_rowOption show_rowOption_ExpanderIcon' checked /><label for='ckb_rowOption_ExpanderIcon' class='show_rowOption show_rowOption_ExpanderIcon'>Expander icon</label>
+      <input type='checkbox' id='ckb_rowOption_FileIcon' class='show_rowOption show_rowOption_FileIcon' checked /><label for='ckb_rowOption_FileIcon' class='show_rowOption show_rowOption_FileIcon'>File icon</label>
+      <input type='checkbox' id='ckb_rowOption_Folders' class='show_rowOption show_rowOption_Folders' checked /><label for='ckb_rowOption_Folders' class='show_rowOption show_rowOption_Folders'>Folders only</label>
+      <input type='checkbox' id='ckb_rowOption_Files' class='show_rowOption show_rowOption_Files' checked /><label for='ckb_rowOption_Files' class='show_rowOption show_rowOption_Files'>Files only</label>
+      <input type='checkbox' id='ckb_rowOption_FileExtensions' class='show_rowOption show_rowOption_FileExtensions' checked /><label for='ckb_rowOption_FileExtensions' class='show_rowOption show_rowOption_FileExtensions'>Extension</label>
+      <br class='show_rowOption'>
+
+      <!-- Fileviewer option HTML -->
+      <input type='radio' id='rd_fileViewer_none' name='show_fileViewerOption' class='show_fileViewerOption show_fileViewerOption_none' checked /><label for='rd_fileViewer_none' class='show_fileViewerOption show_fileViewerOption_none'>None</label>
+      <input type='radio' id='rd_fileViewer_right' name='show_fileViewerOption' class='show_fileViewerOption show_fileViewerOption_right' /><label for='rd_fileViewer_right' class='show_fileViewerOption show_fileViewerOption_right'>Right</label>
+      <input type='radio' id='rd_fileViewer_bottom' name='show_fileViewerOption' class='show_fileViewerOption show_fileViewerOption_bottom' /><label for='rd_fileViewer_bottom' class='show_fileViewerOption show_fileViewerOption_bottom'>Bottom</label>
+      <br class='show_fileViewerOption'>
+
+      <span class='show_ScriptsOption'>Scripts : <a href='index.html'>ON</a> / <a href='index.html?noscript'>OFF</a><br></span>
+
+      <hr>
+      
+      

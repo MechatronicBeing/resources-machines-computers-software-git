@@ -1,0 +1,20 @@
+## Licenses
+- **Content, data, files and media** use "public domain" -or equivalent- licenses, among :  
+  - a [Public Domain dedication](public_domain.md)  
+  - the [Creative Commons CC0 Public Domain Dedication](CC0_1.0_Universal.txt)  
+  - the [Unlicense](Unlicense.txt)  
+  - the [Zero-Clause BSD License](0BSD.txt)
+  - the [MIT No Attribution](MIT_NoAttribution.txt)  
+  - the [WTFPL](WTFPL.txt)  
+  - **NOTE :** some external libraries and media, used in applications, CAN use a **Permissive** (MIT / Expat, BSD, ZLIB / LIBPNG, ISC, Apache, Boost etc.) or **Copyleft License** (CC, GPL / LGPL, MPL, etc.), with some Attribution/Distribution/Derivative/Commercial restrictions    
+- **USES** : 
+  - for any purpose
+  - separate or derivative work
+  - copyrighted or non-copyrighted work
+  - commercial or non-commercial work
+  - no warranties provided, of any kind, express or implied
+  - citations (attribution  are appreciated, but not required
+  - in many cases, any TRADEMARKS and PATENTS belong to their respective owners (and must be treated accordingly, in any derivative work)
+- IF IN DOUBT :
+  - **ALWAYS** VERIFY and COMPLY to the license AND the possibles exceptions (written in the "LICENSE" or the "MechatronicBeing.md" files), accordingly to EACH work
+  - CONTACT the creator of the work, for more information or specific works

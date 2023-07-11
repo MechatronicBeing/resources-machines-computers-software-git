@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <script src='zip.js'></script>
+  </head>
+
+  <body onload="">
+    <h1>Testing <a href="https://github.com/pwasystem/zip/">https://github.com/pwasystem/zip/</a></h1><br>
+    
+    <b><label for="fcontent">Zip file name :</label></b>
+    <input type="text" id="zipFilename" name="zipFilename" value="myFileZip"><br>
+    <input type="button" id="MBFiles"  onclick="z=new Zip(document.getElementById('zipFilename').value)" value='Create the zip file'><br>
+    <hr>
+    <b><label for="localFiles">Add local files : </label></b>
+    <input type="file" id""localFiles" onchange="z.files2zip(this.files, 'LocalFiles/')" value='Add local files' multiple><br>
+    <hr>
+    <b><label for="zipjsFiles">Add "zip.js" files : </label></b>
+    <input type="button" id="zipjsFiles" onclick="z.fecth2zip(['zip.js','README.md','LICENSE'], 'zip.js/')" value='Add "zip.js"'><br>
+    <b><label for="MBFiles">Add "MechatronicBeing" files : </label></b>
+    <input type="button" id="MBFiles"  onclick="z.fecth2zip(['MechatronicBeing.md','index.html'], 'MechatronicBeing/')" value='Add "MechatronicBeing" files'><br>
+    Note : not work in local !
+    <hr>
+    <b>Add new file from a string : </b><br>
+    <b><label for="fname">File name :</label></b>
+    <input type="text" id="fname" name="fname" value="aTestFile.txt"><br>
+    <b><label for="fcontent">File content :</label></b>
+    <input type="text" id="fcontent" name="fcontent" value="Hello World !"><br>
+    <b><label for="fdir">File directory :</label></b>
+    <input type="text" id="fdir" name="fdir" value="testFile/aDirectory/"><br>
+    <input type="button" onclick="z.str2zip(document.getElementById('fname').value,document.getElementById('fcontent').value,document.getElementById('fdir').value)" value='Add new file from a string'><br>
+    <hr>
+    <input type="button" onclick="z.makeZip()" value='Make the zip'>
+  </body>
+</html>

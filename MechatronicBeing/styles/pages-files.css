@@ -1,0 +1,153 @@
+/* body {
+  height: 100vh;
+  width: 100vw;
+  border-spacing: 0;
+  margin: 0 0;
+  overflow: hidden;
+}
+
+.div-body {
+  position: relative;
+  top:0;
+  left:0;
+  height: 100%;
+  width: 100%;
+  border-spacing: 0;
+  margin: 0 0;
+  overflow: hidden;
+}
+
+.div-file-list {
+  position: relative;
+  overflow: hidden;
+  height: 100%; 
+  border-spacing: 0;
+  margin: 0 0;
+}
+
+.div-file-table {
+  position: absolute;
+  left: 0;
+  padding-bottom: 1.5rem;
+  height: 50%;
+  border-spacing: 0;
+  margin: 0 0;
+  overflow: auto;
+}
+
+.div-file-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1.5rem;
+  width: 100%;
+  border-spacing: 0;
+  margin: 0 0;
+  background-color: white;
+} 
+
+.div-file-viewer {
+  overflow: hidden;
+  border-spacing: 0;
+  margin: 0 0;
+  border: 1px solid black;
+} 
+*/
+
+.file-link {
+  text-decoration: none; 
+  border-spacing: 0;
+}
+
+.file-link-element {
+  display: table-cell; 
+  vertical-align: middle;
+}
+
+ 
+.div-file-float {
+  position: fixed; 
+  bottom:0; 
+  left:0;
+  background-color: white;
+}
+
+
+
+.file-select {
+  height: 100%;
+  width: 100%;
+}
+
+/* Icons */
+.file-folderExpandable-icon, .file-folderExpanded-icon { height: 1.7rem; }
+.file-icon, .file-expander-icon { height: 1.5rem; }
+
+/* Colors */
+/* .rootFolder {background-color: LightYellow !important;} */
+.even {background-color: White;}
+.odd {background-color: 	#F0F0F0;}
+
+
+:target ~ .div-file-float { display: block; }
+:not(:target) ~ .div-file-float { display: none; } */
+
+tr:hover { background-color: LightSkyBlue; }
+
+.div-file-tt {background-color: white; border: 1px solid black;}
+
+/* Columns format */
+.file-col-text {text-align: left;}
+.file-col-number {text-align: right;}
+.file-col-input {text-align: center;}
+
+.iframe-file-viewer{
+  width: 100%;
+  height: 100%; 
+  overflow: auto;
+  background-color: white;
+  border-spacing: 0;
+  margin: 0 0;
+}
+
+/* SHOW MENUS */
+#ckb_options_Columns:checked ~ .show_colOption { display: inline; }
+#ckb_options_Columns:not(:checked) ~ .show_colOption { display: none; }
+#ckb_options_ViewType:checked ~ .show_ViewTypeOption { display: inline; }
+#ckb_options_ViewType:not(:checked) ~ .show_ViewTypeOption { display: none; }
+#ckb_options_Rows:checked ~ .show_rowOption { display: inline; }
+#ckb_options_Rows:not(:checked) ~ .show_rowOption { display: none; }
+#ckb_options_FileViewer:checked ~ .show_fileViewerOption { display: inline; } 
+#ckb_options_FileViewer:not(:checked) ~ .show_fileViewerOption { display: none; } 
+#ckb_options_Scripts:checked ~ .show_ScriptsOption { display: inline; } 
+#ckb_options_Scripts:not(:checked) ~ .show_ScriptsOption { display: none; }
+ 
+#ckb_colOption_LastModified:checked ~ #filesList tr .col1 { display: table-cell; }
+#ckb_colOption_LastModified:not(:checked) ~ #filesList tr .col1 { display: none; }
+#ckb_colOption_ItemType:checked ~ #filesList tr .col2 { display: table-cell; }
+#ckb_colOption_ItemType:not(:checked) ~ #filesList tr .col2 { display: none; }
+#ckb_colOption_ItemSize:checked ~ #filesList tr .col3 { display: table-cell; }
+#ckb_colOption_ItemSize:not(:checked) ~ #filesList tr .col3 { display: none; }
+#ckb_colOption_Properties:checked ~ #filesList tr .col4 { display: table-cell; }
+#ckb_colOption_Properties:not(:checked) ~ #filesList tr .col4 { display: none; }
+ 
+/* IF SINGLE FOLDER : Hide all rows but NOT the row needed */
+#rd_ViewType_Single:checked ~ #filesList tr:not(#table-header) { display: none; }
+
+/* Cheat : display the main folder */
+#tr_resources { display: table-row; }
+ 
+/* #ckb_rowOption_Hover:not(:checked) ~ .div-file-list .div-file-table .file-table .div-file-tt { display: none !important; } */
+#ckb_rowOption_FileIcon:checked ~ #filesList tr .file-icon { display: inline; }
+#ckb_rowOption_FileIcon:not(:checked) ~ #filesList tr .file-icon { display: none; }
+#ckb_rowOption_Folders:checked ~ #filesList .isAFolder { display: table-row; }
+#ckb_rowOption_Folders:not(:checked) ~ #filesList .isAFolder { display: none; }
+#ckb_rowOption_Files:checked ~ #filesList .isAFile { display: table-row; }
+#ckb_rowOption_Files:not(:checked) ~ #filesList .isAFile { display: none; }
+#ckb_rowOption_FileExtensions:checked ~ #filesList tr .file-link-extension { display: inline; }
+#ckb_rowOption_FileExtensions:not(:checked) ~ #filesList tr .file-link-extension { display: none; }
+ 
+#rd_fileViewer_none:checked ~ .div-file-viewer { display: none; }
+#rd_fileViewer_right:checked ~ .div-file-viewer { position: absolute; top: 0; right: 0; height: 100%; width: 25%; } 
+#rd_fileViewer_bottom:checked ~ .div-file-viewer { position: absolute; left: 0; bottom: 0; height: 25%; width: 100%; } 
+ 
